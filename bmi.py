@@ -156,7 +156,7 @@ def baca_nombor(soalan, ralat, minimum, maksimum, bulat=False):
         except ValueError:
             print(ralat)
             continue
-        if nombor != nombor or not minimum <= nombor <= maksimum:
+        if not minimum <= nombor <= maksimum:
             print(ralat)
             continue
         return nombor
